@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem;
+}
+:root{
+    --bg-color: #101010;
+    --scound-bg-color: #191919;
+    --text-color: #fff;
+    --scound-color: #c6c9d8bf;
+    --main-color: rgb(125, 35, 35);
+    --bg-font: 3.3rem;
+    --h2-font: 4.2rem;
+    --p-font: 1.1rem;  
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 25px 15%;
+    transition-duration: 0.3s; 
+}
+
+.logo{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar{
+    display: flex;
+}
+.navbar li{
+    position: relative;
+}
+.navbar li a:hover{
+    color: rgb(0, 119, 255);
+}
+.navbar a{
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+.navbar a::after{
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+   left: 0;
+   transition: ease .40s;
+   bottom: 4px; 
+}
+.navbar a:hover:after{
+    width: 100%;
+}
+#menu-icon{
+    font-size: 32px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.H-btn{
+    padding: 0 20px;
+    height: 40px;
+    display: inline-block;
+    line-height: 42px;
+    background: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all .30s;
+}
+.H-btn:hover{
+    transform: translate(-5px);
+}
+
+section{
+    padding: 120px 15%;
+}
+.home{
+    height: 100vh;
+     background: url( image/pro1.jpg );
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     grid-template-columns: repeat(1, 1fr);
+     align-items: center; 
+}
+.home-text{
+    margin: 20px 0 20px;
+    font-size: var(--bg-font);
+    letter-spacing: 2px;
+}
+.newsletter form{
+   width: 380px;
+   max-width: 100%;
+   position: relative;
+}
+.newsletter form input:first-child{
+     display: inline-block;
+     width: 100%;
+     outline: none;
+     padding: 16px 140px 16px 15px;
+     border: 2px solid var(--main-color);
+     border-radius: 30px;
+}
+.newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    background: var(--main-color);
+    color: var(--text-color);
+    padding: 12px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 6px #000, 0px 0px 14px #868686;
+    cursor: pointer;
+    top: 20px;
+    left: 261px;
+    bottom: 1px;
+    height: 50px;
+} 
+span{
+    color: var(--main-color);
+}
+header.sticky{
+    padding: 12px 15%;
+    background: var(--main-color);
+}
+.stricky .navbar a::after{
+    background: var(--text-color);
+}
+.about{
+    display: flex;
+    line-height: var(--p-font);
+    background: #868686;
+}
+#about-img{
+    width: 100;
+    height: 80vh;}
+.about-text {
+    padding-left: 50px; 
+    padding-top: 60px;
+    width: 260px;
+}
+.about-text p{
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--scound-color);
+}
+.about-text h2{
+    padding-bottom: 11px;
+    font-size: 2rem;
+}
+.about-text h5{
+  font-size: var(--p-font);
+}
+.services{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    display: flex;
+}
+.project1 .project2{
+    width: 400px;
+    padding: 10px;
+}
+.project1 h2{
+    font-size: 2rem;
+}
+.project1 p{
+    font-family: serif;
+    font-size: var(--p-font);
+    width: 350px;
+}
+#service-img{
+    width: 20rem;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.profile2{
+    padding-left: 50px;
+}
+.project2 p{
+    width: 350px;
+}
+#m::before{
+    content: "◈";
+    padding: 10px;
+}
+.portfolio{
+    display: flex;
+    padding: 20px;
+    background: gray;
+}
+#potfolio-text{
+    padding-left: 20px;
+    width: 350px;
+}
+.hobbies{
+    padding-left: 40px;
+    
+}
+.hobbies h2{
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--bg-font);
+    font-size: 30px;
+}
+.hobbies p{
+    font-size: 20px;
+}
+.form textarea{
+ height: 30px;
+ width: auto;
+}
+.form h2{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#myForm{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+footer{
+    text-align: center;
+    position: relative;
+    color:rgb(57, 183, 205);
+    width: 100%;
+    background: blueviolet;
+    position: relative;
+}
+.icon ul li{
+    display: inline-block;
+    padding: 10px;
+    color: gray;
+}
+input, #fName, #lName, #phone, #email,#comment{
+    background: transparent;
+}
+#button{
+    background: blue;
+}
+/* Smaller screens like phones */
+@media only screen and (max-width: 300px) {
+    /* Adjust styles for smaller screens */
+header{
+    display: inline;
+    padding: 10px;
+    justify-content: space-between;
+}
+.home-text h1 h4{
+    font-size: 4px;
+    margin-left: 27px;
+}
+.bx-menu{
+    position: relative;
+    display: inline;
+    padding-left: 5px;
+}
+.about{
+    display: inline;
+    margin-top: 60px;
+    background: gray;
+}
+#about-img{
+    height: 400px;
+    margin-top: 70px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.services{
+    display: inline;
+}
+.portfolio{
+    background: gray;
+    background-size: 100%;
+}
+}
+  /* Medium-sized devices like tablets */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust styles for tablets */
+    header{
+        display: flex;
+        padding-left: 10px;
+        padding-right: 5px;
+        justify-content: space-between;
+    }
+    .home-text h1 h4{
+        font-size: 4px;
+        margin-left: 27px;
+    }
+    .H-btn{
+        font-size: 10px;
+        padding-right: 5px;
+        justify-content: space-between;
+    }
+    .services{
+        display: flex;
+        padding: 20px;
+        margin-left: 20px;
+    }
+    .bx-menu{
+        position: relative;
+        display: inline;
+        padding-left: 5px;
+    }
+    .about{
+        display: flex;
+        margin-top: 60px;
+    
+    }
+    #about-img{
+        height: 400px;
+        margin-top: 70px;
+        margin-left: 20px;
+        border-radius: 10px;
+    }
+  }
+  /* Larger screens like desktops */
+  @media only screen and (min-width: 1025px) {
+    /* Adjust styles for larger screens */
+    main{
+        display: flex;
+    }
+  }
