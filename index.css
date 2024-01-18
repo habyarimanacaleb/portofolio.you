@@ -312,11 +312,14 @@ header{
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
     /* Adjust styles for tablets */
     header{
-        display: flex;
+        display: ;
         padding-left: 10px;
         padding-right: 5px;
-        justify-content: space-between;
     }
+    body{
+        display: block;
+    }
+
     .home-text h1 h4{
         font-size: 4px;
         margin-left: 27px;
