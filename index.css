@@ -18,25 +18,28 @@
     --h2-font: 4.2rem;
     --p-font: 1.1rem;  
 }
+html{
+background-color: var(--bg-color);
 
+}
 
 body{
-    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
     color: var(--text-color);
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
 header{
     position: fixed;
+    display: flex;
     width: 100%;
-    top: 0;
-    right: 0;
     z-index: 100;
     display: flex;
+    transition-duration: 0.3s; 
+    margin-top: 20px;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    padding: 25px 15%;
-    transition-duration: 0.3s; 
 }
 
 .logo{
@@ -48,6 +51,7 @@ header{
 
 .navbar{
     display: flex;
+    margin: 10px 10px;
 }
 .navbar li{
     position: relative;
@@ -232,6 +236,12 @@ header.sticky{
     padding-left: 40px;
     
 }
+#comment{
+    margin: 10px 5px;
+    color: white;
+    width: 500px;
+    height: 100px;
+}
 .hobbies h2{
     text-align: center;
     padding-bottom: 20px;
@@ -275,86 +285,15 @@ input, #fName, #lName, #phone, #email,#comment{
 /* Smaller screens like phones */
 @media only screen and (max-width: 300px) {
     /* Adjust styles for smaller screens */
-header{
-    display: inline;
-    padding: 10px;
-    justify-content: space-between;
-}
-.home-text h1 h4{
-    font-size: 4px;
-    margin-left: 27px;
-}
-.bx-menu{
-    position: relative;
-    display: inline;
-    padding-left: 5px;
-}
-.about{
-    display: inline;
-    margin-top: 60px;
-    background: gray;
-}
-#about-img{
-    height: 400px;
-    margin-top: 70px;
-    margin-left: 20px;
-    border-radius: 10px;
-}
-.services{
-    display: inline;
-}
-.portfolio{
-    background: gray;
-    background-size: 100%;
-}
+
 }
   /* Medium-sized devices like tablets */
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
     /* Adjust styles for tablets */
-    header{
-        display: ;
-        padding-left: 10px;
-        padding-right: 5px;
-    }
-    body{
-        display: block;
-    }
-
-    .home-text h1 h4{
-        font-size: 4px;
-        margin-left: 27px;
-    }
-    .H-btn{
-        font-size: 10px;
-        padding-right: 5px;
-        justify-content: space-between;
-    }
-    .services{
-        display: flex;
-        padding: 20px;
-        margin-left: 20px;
-    }
-    .bx-menu{
-        position: relative;
-        display: inline;
-        padding-left: 5px;
-    }
-    .about{
-        display: flex;
-        margin-top: 60px;
     
-    }
-    #about-img{
-        height: 400px;
-        margin-top: 70px;
-        margin-left: 20px;
-        border-radius: 10px;
-    }
   }
   /* Larger screens like desktops */
   @media only screen and (min-width: 1025px) {
     /* Adjust styles for larger screens */
-    main{
-        display: flex;
-    }
+    
   }
