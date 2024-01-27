@@ -169,7 +169,7 @@ header.sticky {
 .about {
   display: flex;
   line-height: var(--p-font);
-  background: #868686;
+  /* background-color: #868686; */
 }
 #about-img {
   width: 100;
