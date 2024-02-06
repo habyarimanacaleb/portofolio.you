@@ -13,11 +13,16 @@
 </head>
 <body>
     <!-- start hearder-->
+
     <header>
         <div class="header" id="header">
-        <div class="bx-menu" id="menu-icon"><i class="fa-solid fa-bars"></i></div>
-        <a href="#" class="logo">Portfolio</a>
-          <ul class="navbar">
+        <!-- <div class="bx-menu" id="menu-icon"><i class="fa-solid fa-bars"></i>
+        </div> -->
+         <div class="logo" id="logo">
+        <a href="#">Portfolio</a>
+        </div>
+        <div class="navb" id="navbar">
+          <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
@@ -25,118 +30,127 @@
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
+        <div  id="connect">
           <a href="#" class="H-btn">Let's Talk</a>
+        </div>
+    </div>
         </header>
-        <section class="home" id="home">
-            <div class="home-text">
-                <h1 style="font-size: 3.5rem;">WELCOME!</h1>
-                <h4 style="font-weight: 100;">My name is</h4>
-                <h1>Caleb <span>HABYARIMANA</span></h1>
-                <h3>I'm a Web Designer</h3>
-                <div class="newsletter">
-                    <form>
-                        <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-                        <input type="submit" name="submit" value="Let's start" id="submit">
-                    </form>
-                </div>
-            </div>
-        </section>
-        <!----end Home--->
-        <!--- start about--->
-        <section class="about" id="about">
-            <div class="about-img">
-                <img id="about-img" src="image/caleb.jpg">
-            </div>
-            <div class="about-text">
-                <h2>About Us</h2>
-                <h5>Developer <span>& Designer</span></h5>
-                <p>I am front-end Web developer. I can building the user interface (UI) and user experience (UeX) of websites or web applications.
-                    and i can also Creating the structure and layout of web pages using HTML, CSS and Javascript.</p>
-            </div>
+        <!-- home section start-->
+        <main>
+                <section class="home" id="home">
+                    <div class="home-text">
+                        <div id="welcome-text">
+                            <h1 style="font-size: 3.5rem;">WELCOME!</h1>
+                            <h2 style="font-weight: 100;">My name is</h2>
+                            <h3>Caleb <span>HABYARIMANA</span></h3>
+                            <h4>I'm a Designer</h4>
+                        </div>
+
+                        <div class="newsletter">
+                            <form>
+                                <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                                <input type="submit" name="submit" value="Let's start" id="submit">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <!--- start about--->
+                <section class="about" id="about">
+                    <div class="about-img">
+                        <img id="about-img" src="image/caleb.jpg">
+                    </div>
+                    <div class="about-text">
+                        <h2>About Us</h2>
+                        <h3>Developer <span>& Designer</span></h3>
+                        <p>I am front-end Web developer. I can building the user interface (UI) and user experience (UeX) of websites or web applications.
+                            and i can also Creating the structure and layout of web pages using HTML, CSS and Javascript.</p>
+                    </div>
         </section>
         <!---start services--->
         <section class="services" id="services">
-            <div class="project1">
-            <img id="service-img" src="image/codeimage1.jpg" >
-            <h2>Web Designing</h2>
-            <p>I can designing differnt Application form for different area like Engineering domain , company's form for Job recruiting and any organization like
-                 <i>Survey form,Registration form and other</i>
-                 with different design and format.As well you can visit the following Link for overviewabout us.
-                 <br><a href="#">More About</a>.
-                 <div class="br">
-            </div></p>
-            </div>
-            <div class="project2">
-                <img id="service-img" src="image/solidworks.jpg">
-                <h2>Computer Aided Disigning</h2>
-                <p>we use different design sofware to generate a modal that can be easier transformed into final product .</p>
-                <h3>We use Software like:</h3>
-                  <ul>
-                    <li id="m">SOLIDWORKS</li>
-                    <li id="m">MATLAB</li>
-                    <li id="m">AUTOCAD</li>
-                  </ul>
-            </div>
-            <div class="project3">
-                <img id="service-img" src="image/ui.jpeg">
-                <h2>Prototyping & Designing pages.</h2>
-                <p>we design with Ui design by using figma site design. <br>These link it generate to our work in figma:</p>
-                <ul>
-                    <li style="color: green;"><a href="./caleb figma design/.">caleb ui Designer.</a></li>
-                </ul>
-            </div>
+                    <div class="project1">
+                    <img id="service-img" src="image/codeimage1.jpg" >
+                    <h1>Web Designing</h1>
+                    <p>I can designing differnt Application form for different area like Engineering domain , company's form for Job recruiting and any organization like
+                        <i>Survey form,Registration form and other</i>
+                        with different design and format.As well you can visit the following Link for overviewabout us.
+                        <br><a href="#">More About</a>.
+                        <div class="br">
+                    </div></p>
+                    </div>
+                    <div class="project2">
+                        <img id="service-img" src="image/solidworks.jpg">
+                        <h2>Computer Aided Disigning</h2>
+                        <p>we use different design sofware to generate a modal that can be easier transformed into final product .</p>
+                        <h3>We use Software like:</h3>
+                        <ul>
+                            <li id="m">SOLIDWORKS</li>
+                            <li id="m">MATLAB</li>
+                            <li id="m">AUTOCAD</li>
+                        </ul>
+                    </div>
+                    <div class="project3">
+                        <img id="service-img" src="image/ui.jpeg">
+                        <h2>Prototyping & Designing pages.</h2>
+                        <p>we design with Ui design by using figma site design. <br>These link it generate to our work in figma:</p>
+                        <ul>
+                            <li style="color: green;"><a href="./caleb figma design/.">caleb ui Designer.</a></li>
+                        </ul>
+                    </div>
         </section>
         <!---start portfolio---->
         <section class="portofolio" id="portofolio">
-            <div class="portfolio-img">
-                <img style="height: 18rem;width: 22rem;background: black; " src="image/clb.jpg" alt="">
-            </div>
-            <div id="potfolio-text">
-                <p>L'me tell you this about my life. <br>I studied<strong>primary and ordinary secondary</strong>around my family in 2007-2017 that is good for some how <br>
-                I started thinking about <strong>Technology </strong>in that year you know past years between 2012-2016 in Rwanda there was low level of technology <br>
-                that 's why i tried to make change in my society by installing and repairing different devices like radio and telephone .My story is this during that time , I start thinking how all things work especial those telephone and radio it's amezing .
-                <br>For more inform about my background you can reffer to <strong>my CV</strong><a href="https://docs.google.com/document/d/1_JIOZ7NUrPmaZkaa1gLl0dOwK2MhzW8V/edit" dawnload target="_blank"> here</a>.</p>
-            </div><div class="hobbies">
-                <h2>My hobbies</h2>
-                <p>In lesure time i like to do physical exercises , watching video and reading science books</p>   
-            </div>
+                    <div class="portfolio-img">
+                        <img style="height: 18rem;width: 22rem;background: black; " src="image/clb.jpg" alt="">
+                    </div>
+                    <div id="potfolio-text">
+                        <p>L'me tell you this about my life. <br>I studied<strong>primary and ordinary secondary</strong>around my family in 2007-2017 that is good for some how <br>
+                        I started thinking about <strong>Technology </strong>in that year you know past years between 2012-2016 in Rwanda there was low level of technology <br>
+                        that 's why i tried to make change in my society by installing and repairing different devices like radio and telephone .My story is this during that time , I start thinking how all things work especial those telephone and radio it's amezing .
+                        <br>For more inform about my background you can reffer to <strong>my CV</strong><a href="https://docs.google.com/document/d/1_JIOZ7NUrPmaZkaa1gLl0dOwK2MhzW8V/edit" dawnload target="_blank"> here</a>.</p>
+                    </div><div class="hobbies">
+                        <h2>My hobbies</h2>
+                        <p>In lesure time i like to do physical exercises , watching video and reading science books</p>   
+                    </div>
                 
         </section>
         <!----start contact us-->
         <section class="contact" id="contact">
-         <h2>Fill out this form for more information or issues</h2>
-         <div class="form">
-         <form id="myForm" action="https://mail.google.com/mail/u/0/?pli=1#imp" target="_blank" method="get">
-            <label for="fName">First name:</label><br>
-            <input type="text" id="fName" placeholder="first name" required><br><br>
-            <label for="lName">Last name:</label><br>
-            <input type="text" id="lName" placeholder="Last name" required><br><br>
-            <label for="fName">Phone#</label><br>
-            <input type="tel" id="phone" placeholder="+2507xxxxxxxx" max="13" min="10" ><br><br>
-            <label for="fName">Email:</label><br>
-            <input type="email" id="email" placeholder="class@gmail.com" required><br><br>
-            <label for="comment">Enter your Comment below if there is any isues.</label><br><textarea name="comment" id="comment" cols="30" rows="10" placeholder="Please type your question or issues here..."></textarea><br><br>
-            <input type="reset" value="reset" id="button">
-            <input type="submit" value="Submit" id="button">
-         </form>
-        </div>        
+                <h2>Fill out this form for more information or issues</h2>
+                <div class="form">
+                <form id="myForm" action="https://mail.google.com/mail/u/0/?pli=1#imp" target="_blank" method="get">
+                    <label for="fName">First name: ⁕</label><br>
+                    <input type="text" id="fName" placeholder="first name" required><br><br>
+                    <label for="lName">Last name: ⁕</label><br>
+                    <input type="text" id="lName" placeholder="Last name" required><br><br>
+                    <label for="fName">Phone#: ⁕ </label><br>
+                    <input type="tel" id="phone" placeholder="+2507xxxxxxxx" max="13" min="10" ><br><br>
+                    <label for="fName">Email: ⁕</label><br>
+                    <input type="email" id="email" placeholder="class@gmail.com" required><br><br>
+                    <label for="comment">Enter your Comment below if there is any isues.</label><br><textarea name="comment" id="comment" cols="30" rows="10" placeholder="Please type your question or issues here..."></textarea><br><br>
+                    <input type="reset" value="reset" id="button">
+                    <input type="submit" value="Submit" id="button">
+                </form>
+                </div>        
         </section>
          <!-- start footer-->
+        </main>
          <footer>
-            <div class="footer" id="footer">
-            <h1> Contact me!</h1>
-            <h2>Tel: +25076015225/0728680460</h2>
-            <h3>Email:calebhabyarimana1@gmail.com</h3>
-            <div class="icon">
-                <h4 style="color: burlywood;font-weight: bold;">Follow us on social media to stay tuned and exciting for us</h4>
-               <ul>
-                <li><a href="#twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#linke.com"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="#facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
-               </ul>
-            </div>
-        </div>
+                    <div class="footer" id="footer">
+                    <h1> Contact me!</h1>
+                    <h2>Tel: +25076015225/0728680460</h2>
+                    <h3>Email:calebhabyarimana1@gmail.com</h3>
+                    <div class="icon">
+                        <h4 style="color: burlywood;font-weight: bold;">Follow us on social media to stay tuned and exciting for us</h4>
+                    <ul>
+                        <li><a href="#twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#linke.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    </ul>
+                    </div>
+                </div>
          </footer>
         <!------link to js------>
     <script type="text/javascript"></script>
