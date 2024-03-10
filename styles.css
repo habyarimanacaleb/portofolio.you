@@ -73,13 +73,12 @@ list-style: none;
     text-align: center;
     margin-left: -90px;
 }
-
 .about{
-    margin: 70px;
     text-align: center;
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
+
 }
 .about1{
     border: 1PX SOLID black;
@@ -156,7 +155,7 @@ list-style: none;
     background-color: white;
     padding: 30px;
     width: 800px;
-    margin: 20px 15%;
+  margin-bottom: 20px;
     border-radius: 20px;  
 }
 #close{
@@ -238,6 +237,7 @@ label::after{
 .contact{
     text-align: center;
     padding: 60px;
+    width: 100%;
     background-color: #666552;
 }
 #h{
@@ -250,90 +250,33 @@ border-radius: 50px;
     position: sticky;
     position: -webkit-sticky;
     text-align: center;
+    width: 100%;
     background-color: rgb(147, 139, 129);
 }
-@media screen  and (max-width:768px){
+@media only screen and (max-width:600) {
+    #nav{
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(211, 225, 251, 0.8);
+        position: absolute;
+    }
     main{
         display: block;
     }
-    .nav-bar{
-        position: relative;
-    }
-    .home{
-        display: block;
-    }
-    .my-profile img{
-   border-radius: 50%;
-   margin-top: 40px;
-   margin-bottom: 60px;
-   border-radius: 50%;
-   border: 0;
-   overflow: 0;
-   object-fit: cover; 
-    }
-    .home-text h1{
-        text-align: center;
-        text-transform: capitalize;
-    }
-   #nav{
+}
+@media only screen and (max-width:1000) {
+    #nav{
         display: none;
         flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(211, 225, 251, 0.8);
+        position: absolute;
     }
-    #nav li{
-        margin: 10px 0;
-    }
-    #nav li a:hover{
-      color: rgb(76, 92, 218, 0.5);
-    }
-    #toggle-button{
-        display: flex;
-        position: relative;
-    }
-    .about{
-        width: auto;
-        padding: 10px;
-        margin-top: -30px;
+    main{
         display: block;
     }
-.service{
-    text-align: center;
-    display: block;
-    margin: 20px;
-    width: auto;
-    align-items: center;
-
-}
-.services img{
-    width: 40%;
-    height: 90%;
-    margin-top: 10px;
-    
-}
-.services img:hover{
-    transform: rotate(0deg);
 }
 
-#nav.activeMenu{
-    display: block;
-    align-items: end;
-}
-
-.btn1,.btn2,.btn3,.btn4{
-    display: none;
-}
-#h{
-    font-size: 30px;
-}
-.contact-inform{
-    display: none;
-    background-color: white;
-    padding: 30px;
-    width: 400px;
-    margin: 10px;
-    border-radius: 20px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-.contact-inform h1{
-    font-size: 20px;
-}
-}
