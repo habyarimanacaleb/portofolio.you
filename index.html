@@ -14,6 +14,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
   </head>
   <body>
     <!--navigation menu start!!-->
@@ -57,7 +63,9 @@
       </section>
 
       <!-- about section-->
-      <section id="about" class="about">
+      <section id="about" >
+        <h1 class="h1">About</h1>
+        <div class="about">
         <div class="about1">
           <h1>Product Designer</h1>
           <p>
@@ -71,19 +79,22 @@
           </button>
         </div>
         <div class="about1">
-          <h1>WebDeveloper</h1>
+          <h1>Web Developer</h1>
           <p>
             Our designing services we focus on what is the best for your company
             and what is best for you. Some text about our services -what we do
             and what we offer our client .
           </p>
-          <p>Dawnload <span>RESUME here</span></p>
+          <p>Dawnload<span>RESUME here</span></p>
           <button>MY RESUME</button>
         </div>
+      </div>
+
       </section>
 
       <section id="services">
-        <h1 id="h1">Our Services Is Based On These Tools</h1>
+           <h1 class="h1">Services</h1>
+        <h2 id="h1">Our Services Is Based On These Tools</h2>
         <div class="service">
           <div class="services">
             <h1>Solidworks</h1>
@@ -125,7 +136,8 @@
         </div>
       </section>
       <section id="portfolio">
-        <h1>OUR WORK CONTRIBUTION</h1>
+        <h1 class="h1">Portfolio</h1>
+        <h2>OUR WORK CONTRIBUTION</h2>
         <div class="portfolio">
         <div class="my-work">
           
@@ -139,7 +151,8 @@
         <div class="contact-inform" id="inform">
           <div id="close">
           <i class="fa-solid fa-circle-xmark"></i>
-        </div>          <h1 id="form-title">ENTER YOUR INFORMATION</h1>
+        </div>         
+         <h1 id="form-title">ENTER YOUR INFORMATION</h1>
           <div class="form-box">
             <div class="form-field">
               <label for="name">Full Name</label><br />
@@ -149,7 +162,7 @@
               <label for="Phone">Full Name</label><br />
               <input type="tel" placeholder="Phone" /><br />
               <textarea name="text" id="textarea" cols="30" rows="10" placeholder="Enter your issue here..."></textarea><br>
-              <button type="submit" id="submit-btn">SUBMIT</button>
+              <button class="btn btn-block btn-primary" type="submit" id="submit-btn">SUBMIT</button>
               <p>
                 By entering your information, you agree that we may collect and
                 use your personal information for marketing, and for other
@@ -160,32 +173,52 @@
           </div>
         </div>
         <h1 id="h">CONTACT US TODAY</h1>
+        <div class="row">
+          <div class="col-xs-4">
+<button class="btn btn-info">Sign in</button>
+          </div>
+          <div class="col-xs-4">
+            <button class="btn btn-primary">Sign up</button>
+
+          </div>
+          <div class="col-xs-4">
+            <button class="btn btn-success" id="back">Back|Home</button>
+
+          </div>
+        </div>
       </div>
       <div class="copyright">
         <h1>CALEB</h1>
         <p>Copyright &COPY; 2024 Caleb</p>
       </div>
     </footer>
-    <script method="post">
-      const toggleButton = document.getElementById("toggle-button");
-      const navBar = document.getElementById("nav");
-
-      toggleButton.onclick = () => {
-        navBar.classList.toggle("activeMenu");
-        // document.getElementById('home').style.marginTop="10px"
-      }
-    </script>
-
+  <!-- form validation -->
     <script>
   const contactUs = document.getElementById('h');
   const contactInform = document.getElementById('inform');
 const close = document.getElementById('close');
+
   contactUs.onclick = ()=>{
     contactInform.style.display ="block" ;
   }
+
+
 close.onclick = ()=>{
   contactInform.style.display = "none";
 }
+
+document.getElementById('back').onclick = ()=>{
+       window.location.url = '#home';
+} 
+    </script>
+    <!-- navigation -->
+    <script>
+      const toggleButton = document.getElementById("toggleButton");
+      const navLinks = document.getElementById("navLinks");
+      toggleButton.onclick = function () {
+        navLinks.classList.toggle("active");
+        document.getElementById("home").classList.toggle("home");
+      };
     </script>
   </body>
 </html>
