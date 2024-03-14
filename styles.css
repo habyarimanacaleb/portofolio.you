@@ -308,16 +308,7 @@ label::after {
     display: block;
     /* grid-template-rows:auto 450px 800px 300px auto; */
   }
-  /* .nav-bar {
-    position: relative;
-    width: 100%;
-    background-color: rgb(11, 13, 14);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 25px;
-  } */
-  .service {
+  */ .service {
     display: block;
   }
   .about {
@@ -332,10 +323,11 @@ label::after {
     font-size: 12px;
     margin-top: 10px;
   }
-  .my-profile img {
+ #my-image {
     border-radius: 50%;
     border: 2px solid wheat;
     object-fit: cover;
+    background-color: rgb(114, 114, 12);
   }
   .home {
     display: block;
@@ -348,25 +340,28 @@ label::after {
   .nav-bar {
     padding: 16px 18px;
   }
-  .toggle-button {
-    display: flex;
+ 
+
+  #nav li {
+    padding: 8px 0px;
   }
   #nav {
     display: none;
     flex-direction: column;
-    position: absolute;
-    width: 100%;
-    background-color: #737883;
-    padding: 25px;
-    top: 100%;
+    /* align-items: center;
     left: 0;
+    top: 100%;
+    background-color: rgb(211, 225, 251, 0.8); */
+    /* position: fixed; */
   }
-  #nav li {
-    padding: 8px 0px;
+  #toggle-button {
+    display: flex;
+    /* position: fixed; */
   }
-  #nav.active {
+  .active{
     display: block;
   }
+
 }
 
 @media only screen and (max-width: 425px) {
@@ -379,21 +374,29 @@ label::after {
     display: grid;
     grid-template-columns: auto auto;
   }
+  #nav {
+    display: none;
+    flex-direction: column;
+    /* align-items: center;
+    left: 0;
+    top: 100%;
+    background-color: rgb(211, 225, 251, 0.8); */
+    position: absolute;
+  }
+  #toggle-button {
+    display: flex;
+    position: relative;
+  }
+  .active{
+    display: block;
+  }
 }
 @media only screen and (max-width: 635px) {
   main {
     display: block;
     width: 100%;
   }
-  .nav-bar {
-    position: relative;
-    width: 100%;
-    background-color: rgb(11, 13, 14);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 25px;
-  }
+  
   .service,
   .about {
     display: block;
@@ -458,17 +461,17 @@ label::after {
   #nav {
     display: none;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center;
     left: 0;
     top: 100%;
-    background-color: rgb(211, 225, 251, 0.8);
+    background-color: rgb(211, 225, 251, 0.8); */
     position: absolute;
   }
   #toggle-button {
     display: flex;
     position: relative;
   }
-  .active {
+  .active{
     display: block;
   }
 }
