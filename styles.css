@@ -353,7 +353,7 @@ label::after {
     display: block;
     /* grid-template-rows:auto 450px 800px 300px auto; */
   }
-   .service {
+  .service {
     display: block;
   }
   .about {
@@ -433,7 +433,6 @@ label::after {
   .active-menu {
     display: block;
   }
- 
 }
 @media only screen and (max-width: 635px) {
   main {
@@ -503,13 +502,21 @@ label::after {
     background-color: rgb(228, 134, 134, 0.4);
   }
   #navigation-menu {
-    display: none;
-    /* flex-direction: column;
-    align-items: center;
+    display: block;
+    flex-direction: column;
+    text-align: center;
     left: 0;
     top: 100%;
-    background-color: rgb(211, 225, 251, 0.8);
-    position: absolute; */
+    background-color: rgba(23, 23, 24, 0.9);
+    position: absolute;
+    width: 18vw;
+    height: 41vh;
+  }
+  #navigation-menu:hover{
+    background-color: rgb(0, 0, 0);
+  }
+  #navigation-menu a:focus{
+  color: aqua;
   }
   #toggle-button {
     display: flex;
@@ -518,5 +525,4 @@ label::after {
   .active-menu {
     display: block;
   }
- 
 }
