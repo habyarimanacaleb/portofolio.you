@@ -4,7 +4,8 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-body,html{
+body,
+html {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,13 +31,13 @@ main {
   justify-content: space-between;
   padding: 5px 25px;
 }
-#nav {
+#navigation-menu {
   display: flex;
 }
-#nav li {
+#navigation-menu li {
   list-style: none;
 }
-#nav li a {
+#navigation-menu li a {
   text-decoration: none;
   color: beige;
   padding-left: 10px;
@@ -47,16 +48,19 @@ main {
 }
 #toggle-button {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   display: none;
+  border: 1px solid #494747;
+  padding: 5px;
+  background-color: #41413d;
 }
-#my-image{
+#my-image {
   border-radius: 50%;
   width: 20rem;
   height: 20rem;
   border: none;
   background-attachment: fixed;
- overflow: none;
+  overflow: none;
   object-fit: cover;
 }
 #home {
@@ -308,10 +312,40 @@ label::after {
   .nav-bar {
     position: sticky;
   }
+  #home {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 0;
+    background-color: antiquewhite;
+  }
 
   .service {
     display: grid;
     grid-template-columns: auto auto;
+  }
+  #navigation-menu {
+    display: none;
+    /* flex-direction: column;
+    align-items: center;
+    left: 0;
+    top: 100%;
+    background-color: rgb(211, 225, 251, 0.8);
+    position: absolute; */
+  }
+  #toggle-button {
+    display: flex;
+    position: relative;
+  }
+  .active-menu {
+    display: block;
   }
 }
 @media only screen and (max-width: 635px) {
@@ -319,7 +353,7 @@ label::after {
     display: block;
     /* grid-template-rows:auto 450px 800px 300px auto; */
   }
-  */ .service {
+   .service {
     display: block;
   }
   .about {
@@ -334,7 +368,7 @@ label::after {
     font-size: 12px;
     margin-top: 10px;
   }
- #my-image {
+  #my-image {
     border-radius: 50%;
     border: none;
     overflow: none;
@@ -351,28 +385,26 @@ label::after {
   .nav-bar {
     padding: 16px 18px;
   }
- 
 
-  #nav li {
+  #navigation-menu li {
     padding: 8px 0px;
   }
-  #nav {
+  #navigation-menu {
     display: none;
-    flex-direction: column;
-    /* align-items: center;
+    /* flex-direction: column;
+    align-items: center;
     left: 0;
     top: 100%;
-    background-color: rgb(211, 225, 251, 0.8); */
-    /* position: fixed; */
+    background-color: rgba(54, 56, 58, 0.8);
+    position: absolute; */
   }
   #toggle-button {
     display: flex;
-    /* position: fixed; */
+    position: relative;
   }
-  .active{
+  .active-menu {
     display: block;
   }
-
 }
 
 @media only screen and (max-width: 425px) {
@@ -385,29 +417,30 @@ label::after {
     display: grid;
     grid-template-columns: auto auto;
   }
-  #nav {
+  #navigation-menu {
     display: none;
-    flex-direction: column;
-    /* align-items: center;
+    /* flex-direction: column;
+    align-items: center;
     left: 0;
     top: 100%;
-    background-color: rgb(211, 225, 251, 0.8); */
-    position: absolute;
+    background-color: rgb(211, 225, 251, 0.8);
+    position: absolute; */
   }
   #toggle-button {
     display: flex;
     position: relative;
   }
-  .active{
+  .active-menu {
     display: block;
   }
+ 
 }
 @media only screen and (max-width: 635px) {
   main {
     display: block;
     width: 100%;
   }
-  
+
   .service,
   .about {
     display: block;
@@ -417,7 +450,7 @@ label::after {
     object-fit: cover;
   }
 
-  .my-profile img {
+  #my-image {
     border-radius: 50%;
     border: 2px solid wheat;
     width: 8rem;
@@ -469,20 +502,21 @@ label::after {
     padding: 10px;
     background-color: rgb(228, 134, 134, 0.4);
   }
-  #nav {
+  #navigation-menu {
     display: none;
-    flex-direction: column;
-    /* align-items: center;
+    /* flex-direction: column;
+    align-items: center;
     left: 0;
     top: 100%;
-    background-color: rgb(211, 225, 251, 0.8); */
-    position: absolute;
+    background-color: rgb(211, 225, 251, 0.8);
+    position: absolute; */
   }
   #toggle-button {
     display: flex;
     position: relative;
   }
-  .active{
+  .active-menu {
     display: block;
   }
+ 
 }

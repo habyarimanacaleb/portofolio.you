@@ -27,7 +27,7 @@
       <div class="mylogo">
         <a href="#home">CALEB</a>
       </div>
-      <ul id="nav" class="nav-links">
+      <ul id="navigation-menu" class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -157,11 +157,11 @@
           <div class="form-box">
             <div class="form-field">
               <label for="name">Full Name</label><br />
-              <input type="text" placeholder="Full Name" /><br />
+              <input type="text" placeholder="Full Name" id="name"/><br />
               <label for="email">Email</label><br />
-              <input type="email" placeholder="Email" /><br />
+              <input type="email" placeholder="Email" id="email"/><br />
               <label for="Phone">Full Name</label><br />
-              <input type="tel" placeholder="Phone" /><br />
+              <input type="tel" placeholder="Phone" id="Phone"/><br />
               <textarea name="text" id="textarea" cols="30" rows="10" placeholder="Enter your issue here..."></textarea><br>
               <button class="btn btn-block btn-primary" type="submit" id="submit-btn">SUBMIT</button>
               <p>
@@ -193,33 +193,7 @@
         <p>Copyright &COPY; 2024 Caleb</p>
       </div>
     </footer>
-  <!-- form validation -->
-    <script>
-  const contactUs = document.getElementById('h');
-  const contactInform = document.getElementById('inform');
-const close = document.getElementById('close');
-
-  contactUs.onclick = ()=>{
-    contactInform.style.display ="block" ;
-  }
-
-
-close.onclick = ()=>{
-  contactInform.style.display = "none";
-}
-
-document.getElementById('back').onclick = ()=>{
-       window.location.url = '#home';
-} 
-    </script>
-    <!-- navigation -->
-    <script>
-      const toggleButton = document.getElementById('toggle-button');
-      const navLinks = document.getElementById('nav');
-
-      toggleButton.onclick = ()=>{
-        navLinks.classList.toggle('active');
-      }
-    </script>
+ 
+    <script src="main.js" type="text/javascript"></script>
   </body>
 </html>
