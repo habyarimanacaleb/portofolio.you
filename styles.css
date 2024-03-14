@@ -377,6 +377,7 @@ label::after {
   .home {
     display: block;
     background-color: antiquewhite;
+    border: none;
   }
   .my-quote {
     text-align: center;
