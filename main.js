@@ -11,7 +11,7 @@ close.onclick = () => {
 };
 
 document.getElementById("back").onclick = () => {
-    window.location.href == '/#home';
+    window.location.href == '#home';
 };
 
 // navigation menu responsiveness by toggle button

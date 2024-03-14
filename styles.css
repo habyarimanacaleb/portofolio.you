@@ -503,7 +503,7 @@ label::after {
     background-color: rgb(228, 134, 134, 0.4);
   }
   #navigation-menu {
-    display: block;
+    display: none;
     flex-direction: column;
     text-align: center;
     left: 0;
