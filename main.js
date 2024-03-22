@@ -7,8 +7,10 @@ const closeButon = document.getElementById("close-btn");
 
 // sign up variable
 
-const siginupBtn = document.getElementById('signin-btn');
+const signinBtn = document.getElementById('signin-btn');
 const signupBtn = document.getElementById('signup-btn');
+const signupTitlte = document.getElementById('signup-title');
+const namefield = document.getElementById('nameField');
 
 contactUs.onclick = () => {
   contactInform.style.display = "block";
@@ -47,6 +49,22 @@ toggleButton.addEventListener('click',function(){
 }
 );
 // sign up men
+  signinBtn.onclick = (e)=>{
+    e.preventDefault();
+
+    signinBtn.style.display = 'block';
+    signupTitlte.innerHTML = 'sign in';
+    namefield.style.display = 'none'; 
+     
+  }
+  signupBtn.onclick = (e)=>{
+    e.preventDefault();
+
+    signinBtn.style.display = 'block';
+    signupTitlte.innerHTML = 'sign up';
+    namefield.style.display = 'flex'; 
+     
+  }
 
 
 
