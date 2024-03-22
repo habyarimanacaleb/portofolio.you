@@ -1,18 +1,23 @@
 const contactUs = document.getElementById("h");
 const contactInform = document.getElementById("inform");
-const close = document.getElementById("close");
+const closebtn = document.getElementById("close");
 const toggleButton = document.getElementById("toggle-button");
 const navLink = document.getElementById("navigation-menu");
-const closeBtn = document.getElementById("close-btn");
+const closeButon = document.getElementById("close-btn");
+
+// sign up variable
+
+const siginupBtn = document.getElementById('signin-btn');
+const signupBtn = document.getElementById('signup-btn');
 
 contactUs.onclick = () => {
   contactInform.style.display = "block";
 };
 
-close.onclick = () => {
+closebtn.onclick = () => {
   contactInform.style.display = "none";
 };
-closeBtn.onclick = () => {
+closeButon.onclick = () => {
   navLink.style.display = "none";
 };
 
@@ -36,3 +41,9 @@ function toggleNav() {
     navLink.style.display = 'block';
   }
 }
+
+
+// sign up men
+
+
+

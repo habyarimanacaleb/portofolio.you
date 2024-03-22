@@ -21,11 +21,11 @@
       crossorigin="anonymous"
     />
   </head>
-  <body >
+  <body>
     <!--navigation menu start!!-->
     <nav class="nav-bar">
-      <div class="mylogo">
-        <a href="#home">CALEB</a>
+      <div class="my-logo">
+        <h1>CALEB</h1>
       </div>
       <ul id="navigation-menu" class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -33,7 +33,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
-        <div id="close-btn"><i id="close2" class="fa-solid fa-circle-xmark"></i></div>
+        <!-- <div id="close-btn"><i id="close2" class="fa-solid fa-circle-xmark"></i></div> -->
       </ul>
       <div id="toggle-button">
         <i class="fa-solid fa-bars"></i>
@@ -44,7 +44,7 @@
     <main>
       <!-- home section-->
 
-      <section id="home" class="home">
+      <section id="home" class="home active">
         <div class="home-text">
           <h1>Welcome to My Portfolio!!</h1>
           <p>My Name is <span>Caleb</span></p>
@@ -142,9 +142,89 @@
         <div class="portfolio">
           <div class="my-work"></div>
         </div>
+        <div class="container">
+          <div class="form-box2">
+            <h1 class="signup-title" id="title">sign up</h1>
+            <form>
+              <div class="input-group">
+                <div class="input-field" id="nameField">
+                  <i class="fa-regular fa-user"></i>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    name="text"
+                    autocomplete="text"
+                  />
+                </div>
+                <div class="input-field">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    autocomplete="email"
+                  />
+                </div>
+                <div class="input-field">
+                  <i class="fa-solid fa-lock"></i>
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    name="password"
+                    autocomplete="true"
+                  />
+                </div>
+                <p>Lost Password <a href="">Click here</a></p>
+                <div class="row">
+                  <div class="col-xs-4">
+                    <button class="btn btn-info" id="signin-btn">
+                      Sign in
+                    </button>
+                  </div>
+                  <div class="col-xs-4">
+                    <button class="btn btn-primary" id="signup-btn">
+                      Sign up
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="form-box2" id="signin-box">
+            <h1 id="title">sign in</h1>
+            <form>
+              <div class="input-group">
+                <!-- <div class="input-field" id="nameField">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Enter your name">
+                    </div> -->
+
+                <div class="input-field">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    autocomplete="true"
+                  />
+                </div>
+
+                <div class="input-field">
+                  <i class="fa-solid fa-lock"></i>
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    name="password"
+                    autocomplete="true"
+                  />
+                </div>
+                <p>Lost Password <a href="">Click here</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
-
     <footer id="contact">
       <div class="contact">
         <div class="contact-inform" id="inform">
@@ -201,12 +281,6 @@
         </div>
         <h1 id="h">CONTACT US TODAY</h1>
         <div class="row">
-          <div class="col-xs-4">
-            <button class="btn btn-info">Sign in</button>
-          </div>
-          <div class="col-xs-4">
-            <button class="btn btn-primary">Sign up</button>
-          </div>
           <div class="col-xs-4">
             <button class="btn btn-success" id="back">Back|Home</button>
           </div>
