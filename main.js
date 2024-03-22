@@ -18,8 +18,9 @@ closebtn.onclick = () => {
   contactInform.style.display = "none";
 };
 closeButon.onclick = () => {
+ 
   navLink.style.display = "none";
-};
+}
 
 
 document.getElementById("back").onclick = () => {
@@ -33,16 +34,18 @@ document.getElementById("back").onclick = () => {
 //   document.getElementById("home").classList.toggle("home");
 // });
 
-toggleButton.addEventListener('click',toggleNav);
-function toggleNav() {
-  if (navLink.style.display === 'block') {
+toggleButton.addEventListener('click',function(){
+  if (navLink.style.display === 'flex')
+   {
     navLink.style.display = 'none';
-  } else {
+
+  }
+  else {
     navLink.style.display = 'block';
+    navLink.classList.toggle("active-menu");
   }
 }
-
-
+);
 // sign up men
 
 
