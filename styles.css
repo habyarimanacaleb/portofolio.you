@@ -210,6 +210,8 @@ h1 {
   font-weight: bold;
 }
 .form-box2{
+  margin-left: 30%;
+  margin-right: 30%;
   margin-bottom: 20px;
   border: 1px solid lightgray;
   box-shadow: 0.5rem 1rem 0.5rem lightgray;
@@ -220,6 +222,7 @@ h1 {
 }
 .container{
   margin-bottom: 20px;
+  
 }
 /* .signup-title::after{
   content: "";
@@ -543,7 +546,7 @@ label::after {
   }
   .my-quote {
     text-align: center;
-  }
+  }contai
   .contact h1 {
     font-size: 18px;
   }
