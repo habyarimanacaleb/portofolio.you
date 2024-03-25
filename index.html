@@ -32,6 +32,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="/login.html">Login</a></li>
         <li><a href="#contact">Contact</a></li>
         <div id="close-btn"><i id="close2" class="fa-solid fa-circle-xmark"></i></div>
       </ul>
@@ -77,7 +78,7 @@
             </p>
             <p>Join us on <span>LINKEDIN here</span></p>
             <button>
-              <a href=""https://www.linkedin.com/in/habyarimana-caleb-517555285/>LINKEDIN PAGE</a>
+              <a href="https://www.linkedin.com/in/habyarimana-caleb-517555285/">LINKEDIN PAGE</a>
             </button>
           </div>
           <div class="about1">
@@ -88,7 +89,7 @@
               -what we do and what we offer our client .
             </p>
             <p>Dawnload<span>RESUME here</span></p>
-            <button>MY RESUME</button>
+            <button dawnload>MY RESUME</button>
           </div>
         </div>
       </section>
@@ -156,7 +157,7 @@
           <div class="form-box2">
             <h1 class="signup-title" id="signup-title">sign up</h1>
 
-            <form>
+            <form id="sign-form">
               <div class="input-group">
                 <div class="input-field" id="nameField">
                   <i class="fa-regular fa-user"></i>
@@ -164,51 +165,58 @@
                     type="text"
                     placeholder="Enter your name"
                     name="text"
+                    id="username"
                     autocomplete="text"
+                    required
                   />
                 </div>
                 <div class="input-field">
                   <i class="fa-regular fa-envelope"></i>
                   <input
                     type="email"
+                    id="email"
                     placeholder="Email"
                     name="email"
                     autocomplete="email"
+                    required
                   />
                 </div>
                 <div class="input-field">
                   <i class="fa-solid fa-lock"></i>
                   <input
                     type="password"
+                    id="password"
                     placeholder="Password"
                     name="password"
                     autocomplete="true"
+                    required
                   />
                 </div>
                 <p>Lost Password <a href="">Click here</a></p>
                 <div class="row">
                   <div class="col-xs-4">
-                    <button class="btn btn-info" id="signin-btn">
+                    <button type="submit" class="btn btn-info" id="signin-btn">
                       Sign in
                     </button>
                   </div>
                   <div class="col-xs-4">
-                    <button class="btn btn-primary" id="signup-btn">
+                    <button type="submit" class="btn btn-primary" id="signup-btn">
                       Sign up
                     </button>
                   </div>
                 </div>
               </div>
             </form>
+            <div id="errorMessages"></div>
           </div>
-          <div class="form-box2" id="signin-box">
+          <!--<div class="form-box2" id="signin-box">
             <h1 id="signin-title">sign in</h1>
           </form>
               <div class="input-group">
                 <!-- <div class="input-field" id="nameField">
                         <i class="fa-regular fa-user"></i>
                         <input type="text" placeholder="Enter your name">
-                    </div> -->
+                    </div> 
 
                 <div class="input-field">
                   <i class="fa-regular fa-envelope"></i>
@@ -232,7 +240,7 @@
                 <p>Lost Password <a href="">Click here</a></p>
               </div>
             </form>
-          </div>
+          </div>  -->
         </div>
       </section>
     </main>
