@@ -1,0 +1,165 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+}
+.toggle-button{
+    margin:0 0 15px 10px;
+
+}
+    .toggle-button i{
+  font-size: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0 .5rem .5rem rgb(198, 196, 196);
+  cursor: pointer;
+}
+.side-menu{
+    width: 180px;
+    display: block;
+    position: fixed;
+    background-color: rgb(204, 210, 210);
+    height: 100%;
+}
+.active{
+    display: block;
+}
+.my-logo{
+    font-size: 30px;
+    text-align: center;
+}
+.navigation-links li{
+    list-style-type: none;
+    padding-top: 40px;
+    
+}
+.navigation-links li a{
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+color: rgb(25, 25, 25);
+}
+.navigation-links li a:focus{
+   color: rgb(8, 255, 234,0.9);
+}
+
+/* main content */
+ main{
+    margin-left: 180px;  
+    width: 100%;
+}
+
+.main-content{
+  width: 100vw;
+  position: relative;
+  margin-left: -180px;
+}
+.main-menu{
+    background-color: gray;
+    /* display: none; */
+    margin-right: 0;
+}
+.main-menu i{
+    font-size: 60px;
+    /* margin-left: -180px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    /* box-shadow: 0 .2rem .2rem rgb(198, 196, 196); */
+}
+.main-nav{
+    padding:10px 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: rgb(204, 210, 210);
+    justify-content: space-around;
+}
+.input-box{
+    display: flex;
+}
+.logo{
+    font-size: 12px;
+    display: none;
+}
+.input-box > input, button{
+    padding: 10px;
+    margin-right: 10px;
+}
+#home{
+    background: linear-gradient(to right,white,gray);
+height: 100vh;
+}
+.home{
+    font-size: 50px;
+    font-family: monospace;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image{
+    display: flex;
+    justify-content: center;
+}
+.profile-image img{
+    width: 25%;
+}
+#about{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px;
+}
+#about p{
+    text-align: center;
+}
+.about-image img{
+    width:100%;
+}
+@media screen and (max-width:280px) {
+    .input-box > input, button{
+        padding: 2px;
+        margin-right: 0;
+    } 
+    .input-box >input{
+    width: 100px;
+    margin-left: -20px;
+    
+    }
+    .input-box button{
+        margin-left: 5px;
+    } 
+    .input-box #search{
+        margin-left: -0.05px;
+        /* border: none; */
+        background-color: rgb(249, 249, 176);
+    }
+    .my-logo{
+        font-size: 20px;
+    }
+    .home{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .input-box > input, button{
+        padding: 2px;
+        margin-right: 0;
+    } 
+    .input-box >input{
+    width: 100px;
+    } 
+    .my-logo{
+        font-size: 20px;
+    }
+    .home{
+        font-size: 20px;
+
+    }
+}

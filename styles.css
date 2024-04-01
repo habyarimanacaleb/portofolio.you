@@ -41,7 +41,7 @@ main {
   color: beige;
   padding-left: 10px;
   transition: linear 3s;
-  font-size: 30px;
+  font-size: 20px;
 }
 #navigation-menu  li a:hover {
   text-decoration: underline 2px indigo;
@@ -217,6 +217,7 @@ h1 {
 #contact {
   background-color: #a5a49a;
   width: 100%;
+  position: relative;
 }
 #h {
   margin-bottom: 20px;
