@@ -16,7 +16,7 @@ const namefield = document.getElementById('nameField');
 
  const username = document.getElementById("username").value.trim();
  const email = document.getElementById("email").value.trim();
- const password = document.getElementById("password").value.trim();
+//  const password = document.getElementById("password").value.trim();
 
 
 contactUs.onclick = () => {
@@ -57,28 +57,28 @@ toggleButton.addEventListener('click',function(){
 );
 // sign up men
 
-  signinBtn.onclick = (e)=>{
-    e.preventDefault();
+  // signinBtn.onclick = (e)=>{
+  //   e.preventDefault();
 
-    signinBtn.style.display = 'block';
-    signupTitlte.innerHTML = 'sign in';
-    namefield.style.display = 'none'; 
+  //   signinBtn.style.display = 'block';
+  //   signupTitlte.innerHTML = 'sign in';
+  //   namefield.style.display = 'none'; 
      
-  }
-  signupBtn.onclick = (e)=>{
-    e.preventDefault();
+  // }
+  // signupBtn.onclick = (e)=>{
+  //   e.preventDefault();
 
-    signinBtn.style.display = 'block';
-    signupTitlte.innerHTML = 'sign up';
-    namefield.style.display = 'flex'; 
+  //   signinBtn.style.display = 'block';
+  //   signupTitlte.innerHTML = 'sign up';
+  //   namefield.style.display = 'flex'; 
      
-  }
+  // }
 
 
   // form validation
 
-  document.getElementById("signup-btn").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
+  document.getElementById("contact-us").addEventListener("submit", function(event) {
+     event.preventDefault(); // Prevent form submission
 
     // Validate inputs
     const errors = [];
@@ -88,9 +88,9 @@ toggleButton.addEventListener('click',function(){
     if (!isValidEmail(email)) {
         errors.push("Please enter a valid email address.");
     }
-    if (password.length < 8) {
-        errors.push("Password must be at least 8 characters long.");
-    }
+    // if (password.length < 8) {
+    //     errors.push("Password must be at least 8 characters long.");
+    // }
 
     // Display error messages or submit form
     if (errors.length > 0) {

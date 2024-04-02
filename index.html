@@ -167,33 +167,34 @@
           <h1 id="form-title">ENTER YOUR INFORMATION</h1>
           <div class="form-box">
             <div class="form-field">
-              <label for="name">Full Name</label><br />
+              <form id="contact-us">
+              <label for="username"> Name</label><br />
               <input
                 type="text"
-                placeholder="Full Name"
-                id="name"
-                autocomplete="additional-name"
+                placeholder="Name"
+                id="username"
+                autocomplete="username"
               /><br />
               <label for="email">Email</label><br />
               <input
                 type="email"
                 placeholder="Email"
                 id="email"
-                autocomplete="additional-name"
+                autocomplete="email"
               /><br />
-              <label for="Phone">Full Name</label><br />
+              <label for="Phone">Phone#</label><br />
               <input
                 type="tel"
                 placeholder="Phone"
                 id="Phone"
-                autocomplete="additional-name"
+                autocomplete="phone"
               /><br />
               <textarea
                 name="text"
                 id="textarea"
                 cols="30"
                 rows="10"
-                placeholder="Enter your issue here..."
+                placeholder="comment..."
               ></textarea
               ><br />
               <button
@@ -203,6 +204,7 @@
               >
                 SUBMIT
               </button>
+            </form>
               <p>
                 By entering your information, you agree that we may collect and
                 use your personal information for marketing, and for other
