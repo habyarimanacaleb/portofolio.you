@@ -1,12 +1,14 @@
     // Fetch input values
-    const username = document.getElementById("username").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value.trim();
+
 
 document.getElementById("signupForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent form submission
 
     // Validate inputs
+    const username = document.getElementById("username").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+    
     const errors = [];
     if (username === "") {
         errors.push("Please enter a username.");
@@ -21,8 +23,15 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
     if (errors.length > 0) {
         document.getElementById("errorMessages").innerHTML = errors.join("<br>");
     } else {
+        
         // Form is valid, you can submit it here or perform other actions
         alert("Form submitted successfully!");
+
+        // redirect to services page
+        window.location.href = './services.html';
+
+        //reset form data
+        document.getElementById("signupForm").reset();
         // Uncomment the line below to submit the form programmatically
         // document.getElementById("signupForm").submit();
     }

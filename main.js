@@ -1,114 +1,94 @@
-const contactUs = document.getElementById("h");
-const contactInform = document.getElementById("inform");
-const closebtn = document.getElementById("close");
-const toggleButton = document.getElementById("toggle-button");
-const navLink = document.getElementById("navigation-menu");
-const closeButon = document.getElementById("close-btn");
+// for redirecting html files
 
-// sign up variable
+document.getElementById('about').addEventListener('click',function(event){
+  event.preventDefault();
 
-const signinBtn = document.getElementById('signin-btn');
-const signupBtn = document.getElementById('signup-btn');
-const signupTitlte = document.getElementById('signup-title');
-const namefield = document.getElementById('nameField');
+  window.location.href = './about.html'
+})
+document.getElementById('service').addEventListener('click',function(event){
+  event.preventDefault();
 
- // Fetch input values from form validation
+  window.location.href = './services.html'
+})
+document.getElementById('home').addEventListener('click',function(event){
+  event.preventDefault();
 
- const username = document.getElementById("username").value.trim();
- const email = document.getElementById("email").value.trim();
-//  const password = document.getElementById("password").value.trim();
+  window.location.href = './index.html'
+})
+document.getElementById('portfolio').addEventListener('click',function(event){
+  event.preventDefault();
+
+  window.location.href = './portfolio.html'
+})
+
+document.getElementById('signin').addEventListener('click',function(event){
+  event.preventDefault();
+
+  window.location.href = './signin.html'
+})
+
+//lines of codes for alidating index.html
+//lines of codes for alidating index.html
+//lines of codes for alidating index.html
 
 
-contactUs.onclick = () => {
-  contactInform.style.display = "block";
-};
+// lines of codes for alidating sevices.html
+// lines of codes for alidating sevices.html
+// lines of codes for alidating sevices.html
 
-closebtn.onclick = () => {
-  contactInform.style.display = "none";
-};
-closeButon.onclick = () => {
- 
-  navLink.style.display = "none";
-}
+document.getElementById('contact-us').addEventListener('submit', function(event){
+event.preventDefault();
 
-document.getElementById("back").onclick = (e) => {
-  e.preventDefault();
-    window.location.href = '/index.html';
-};
+let email = document.getElementById('email').value;
+let name = String(document.getElementById('username').value);
+let phone = Number(document.getElementById('phone').value);
+let message = document.getElementById('message').value;
 
-// navigation menu responsiveness by toggle button
+// error tracking
+let errorName = document.getElementById('name-err');
+let errorEmail = document.getElementById('email-err');
+let errorPhone = document.getElementById('phone-err');
+let errorMessages = document.getElementById('msg-err');
 
-// toggleButton.addEventListener("click", () => {
-//   navLinks.classList.toggle("active-menu");
-//   document.getElementById("home").classList.toggle("home");
-// });
+ let valid = true;
+ errorEmail.textContent = "";
+ errorMessages.textContent = "";
+ errorName.textContent = "";
+ errorPhone.textContent = "";
 
-toggleButton.addEventListener('click',function(){
-  if (navLink.style.display === 'flex')
-   {
-    navLink.style.display = 'none';
+ if(!email && !name){
+  errorEmail.textContent = "Please enter your emai ! email is required";
+   errorName.textContent = "Please enter your name";
+  valid = false;
+ }
 
+ if(!phone && !message){
+  errorPhone.textContent = "Please enter your active phone number";
+  errorMessages.textContent = "Please enter your message here";
+
+  valid = false;
+ }
+
+ if(valid){
+  alert('Your Information Are Completely Submitted')
+
+  // saving form data to local storage
+
+  let formData = {
+    title: name,
+    content:message,
+    contact:phone,
+    email_Address:email
   }
-  else {
-    navLink.style.display = 'block';
-    navLink.classList.toggle("active-menu");
-  }
-}
-);
-// sign up men
 
-  // signinBtn.onclick = (e)=>{
-  //   e.preventDefault();
+  localStorage.setItem('formData',JSON.stringify(formData));
 
-  //   signinBtn.style.display = 'block';
-  //   signupTitlte.innerHTML = 'sign in';
-  //   namefield.style.display = 'none'; 
-     
-  // }
-  // signupBtn.onclick = (e)=>{
-  //   e.preventDefault();
+  // reset forrm data
+  document.getElementById('contact-us').reset();
 
-  //   signinBtn.style.display = 'block';
-  //   signupTitlte.innerHTML = 'sign up';
-  //   namefield.style.display = 'flex'; 
-     
-  // }
+ }
 
-
-  // form validation
-
-  document.getElementById("contact-us").addEventListener("submit", function(event) {
-     event.preventDefault(); // Prevent form submission
-
-    // Validate inputs
-    const errors = [];
-    if (username === "") {
-        errors.push("Please enter a username.");
-    }
-    if (!isValidEmail(email)) {
-        errors.push("Please enter a valid email address.");
-    }
-    // if (password.length < 8) {
-    //     errors.push("Password must be at least 8 characters long.");
-    // }
-
-    // Display error messages or submit form
-    if (errors.length > 0) {
-        document.getElementById("errorMessages").innerHTML = errors.join("<br>");
-    } else {
-        // Form is valid, you can submit it here or perform other actions
-        alert("Form submitted successfully!");
-        // Uncomment the line below to submit the form programmatically
-        // document.getElementById("signupForm").submit();
-    }
-});
-
-// Function to validate email format
-function isValidEmail(email) {
-    // Regular expression for basic email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
+})
 
 
 
