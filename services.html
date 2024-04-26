@@ -179,7 +179,7 @@
          <a id="home" href="index.html">Home |</a>
          <a id="about" href="#about">About |</a>
          <a href="#services">Services |</a> 
-         <a href="#portfolio">Portfolio |</a> 
+         <a id="Portfolio" href="#portfolio">Portfolio |</a> 
          <a href="#signup">Sign up |</a>
          <a href="#contact">Contact</a>
         </div>
@@ -189,6 +189,60 @@
     <script>
       document.getElementById('toggle-button').addEventListener('click',function(){
   document.getElementById('navigation-menu').classList.toggle('active');
+})
+
+document.getElementById('contact-us').addEventListener('submit', function(event){
+event.preventDefault();
+
+let email = document.getElementById('email').value;
+let name = String(document.getElementById('username').value);
+let phone = Number(document.getElementById('phone').value);
+let message = document.getElementById('message').value;
+
+// error tracking
+let errorName = document.getElementById('name-err');
+let errorEmail = document.getElementById('email-err');
+let errorPhone = document.getElementById('phone-err');
+let errorMessages = document.getElementById('msg-err');
+
+ let valid = true;
+ errorEmail.textContent = "";
+ errorMessages.textContent = "";
+ errorName.textContent = "";
+ errorPhone.textContent = "";
+
+ if(!email && !name){
+  errorEmail.textContent = "Please enter your emai ! email is required";
+   errorName.textContent = "Please enter your name";
+  valid = false;
+ }
+
+ if(!phone && !message){
+  errorPhone.textContent = "Please enter your active phone number";
+  errorMessages.textContent = "Please enter your message here";
+
+  valid = false;
+ }
+
+ if(valid){
+  alert('Your Information Are Completely Submitted')
+
+  // saving form data to local storage
+
+  let formData = {
+    title: name,
+    content:message,
+    contact:phone,
+    email_Address:email
+  }
+
+  localStorage.setItem('formData',JSON.stringify(formData));
+
+  // reset forrm data
+  document.getElementById('contact-us').reset();
+
+ }
+
 })
     </script>
     <script src="main.js"></script>
