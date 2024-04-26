@@ -59,9 +59,11 @@ body button:hover{
 #signup{
     font-size: medium;
 }
-#toggle-button{
+
+#toggle-button,#close-button{
 display: none;
 color: white;
+font-size: 25px;
 }
 .welcome{
    margin: 20px;
@@ -138,6 +140,9 @@ color: white;
 display: block;
 color: white;
 } 
+#close-button{
+    margin-right: -230px;
+}
 .nav-links{
     display: none;
     position: absolute;

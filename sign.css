@@ -2,25 +2,50 @@
     margin: 0;
     box-sizing: border-box;
 }
+.nav-bar{
+    padding: 20px;
+    background-color: antiquewhite;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+     position: relative;
+     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.my-logo{
+    font-size:20px;
+}
+.nav-links{
+    display: flex;
+    list-style-type: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    font-size: large;
+    padding-right: 20px;
+}
+#toggle-button{
+    display: none;
+}
 .register-form{
-   margin: 50px;
-   padding: 20px;
-   border: 1px solid rgb(0, 179, 255);
-   box-shadow: 0 0.5rem 0.5rem rgb(199, 194, 194);
+  display: flex;
+  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
 }
 .input-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 10px;
- 
 }
-.input-form > input{
-    padding: 5px;
-    border: none;
-    width: 60%;
+.input-form input{
+    padding: 8px;
+    font-size: larger;
     outline: none;
-    border-bottom: 1px solid gray;
+}
+.input-form label{
+    font-size: 30px;
 }
 #submit-btn{
     justify-content: center;
@@ -49,3 +74,32 @@
     width: 55%;
     resize: none;
 }
+footer{
+    display: flex;
+    justify-content: space-between;
+align-items: center;    background-color: antiquewhite;
+    height: 31.7vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 100px;
+}
+@media screen and (max-width:500px) {
+
+    .nav-links{
+        display: none;
+
+    }
+    .back-to-home p a{
+        text-decoration: none;
+        font-size: medium;            color: tomato;
+    }
+    #toggle-button{
+        display: block;
+    }
+    #close-btn,#togg-btn{
+        font-size: 30px;
+    }
+    #close-btn{
+        display: none;
+    }
+    }

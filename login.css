@@ -1,86 +1,158 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: sans-serif;
-    z-index: 1;
-    background: linear-gradient(to right, rgb(31, 139, 210,0.7),rgb(187, 178, 178));
- }
- .account-container{
-    margin-top: 2rem;
-    padding: 1.5rem;
-    margin: 100px;
- }
- .register-form{
-    margin-bottom: 2rem;
-    border: 1px solid rgb(0, 255, 255,0.75);
-    padding: 1.5rem;
-    box-shadow: 0 0.5rem 0.5rem gray ;
-    /* background-color: antiquewhite; */
 
- }
- 
- .input-form{
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.nav-bar{
+    padding: 20px;
+    background-color: antiquewhite;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+     position: relative;
+     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+}
+.my-logo{
+    font-size:20px;
+}
+.nav-links{
+    display: flex;
+    list-style-type: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    font-size: large;
+    padding-right: 20px;
+}
+#toggle-button{
+    display: none;
+}
+.account-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.additional-infor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    font-size: 18px;
+}
+.error{
+    color: red;
+    font-size: xx-small;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.back-to-home{
+    margin-top: 10px;
+}
+.back-to-home p{
+    margin-bottom: 40px;
+}
+.back-to-home p a{
+    text-decoration: none;
+    font-size: x-large;
+    color: tomato;
+    text-decoration: underline double 3px blue;
+}
+.input-form{
+    margin-bottom: 10px;
+}
+.input-form input{
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+}
+.input-form input:hover{
+    background-color: rgb(175, 173, 173);
+    color: white;
+}
+.input-form label{
+    font-size: 30px;
+}
+#submit{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+#submit button{
     padding: 8px;
- }
- .input-form > input{
-    width: 50%;
-    padding: 10px;
-    margin-left: 8px;
-    background-color: transparent; 
+    text-align: center;
+    font-size:large;
+    background-color: rgb(56, 233, 233);
+    text-transform: uppercase;
+    color: white;
     border: none;
     outline: none;
-    border-bottom: 2px solid black;
- }
- .input-form > label{
-    font-size: 30px;
- }
- #comment-section{
-      width: 55%;
-      height: 50px;
-      padding-left: 5px;
-  resize: none;
-  background-color: transparent;
-  color:wheat;
- }
- #submit{
-    justify-content: center;
-    display: flex;
-  margin-top: 20px;
-
- }
- #submit > button{
-    font-size: 20px;
-    padding: 10px;
-    border: 0;
-    border-radius: 6px;
-    transition: 0.3s;
-    background-color: rgb(20, 174, 226,0.5);
- }
- #submit > button:hover{
-     background-color: rgb(20, 174, 226,0.9);
- }
- #submit > button:focus{
-    transform: translateY(0.1rem);
- }
- .back-to-home{
- text-align: center;
- }
+    transition: ease-in .2s;
+} 
+#submit button:hover{
+    background-color: aqua;
+    transform: translateY(-.01rem);
+}
+form h1{
+    color: lightcoral;
+    text-align: center;
+    padding-bottom: 40px;
+    text-decoration: underline 8px black;
+}
 #back-home{
-   margin-top: 80px;
- }
- #back-home a{
+    border: 1px solid gray;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(8, 219, 219);
+}
+#back-home a{
     text-decoration: none;
-    color: rgb(20, 127, 241);
-    border:2px solid rgb(111, 215, 250);
-    padding: 15px;
-    background-color: rgb(20, 174, 226,0.7);
- }
- #errorMessages{
-   text-align: center;
-   padding: 12px;
- }
+    font-size: large;
+    color: white;
+
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    background-color: antiquewhite;
+    height: 15.7vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+@media screen and (max-width:500px) {
+
+.nav-links{
+    display: none;
+
+}
+.back-to-home p a{
+    text-decoration: none;
+    font-size: medium;            color: tomato;
+}
+#toggle-button{
+    display: block;
+}
+#close-btn,#togg-btn{
+    font-size: 30px;
+}
+#close-btn{
+    display: none;
+}
+}
+
