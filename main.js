@@ -15,11 +15,13 @@ document.getElementById('home').addEventListener('click',function(event){
 
   window.location.href = './index.html'
 })
+
 document.getElementById('portfolio').addEventListener('click',function(event){
   event.preventDefault();
 
   window.location.href = './portfolio.html'
 })
+
 
 document.getElementById('signin').addEventListener('click',function(event){
   event.preventDefault();
