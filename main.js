@@ -1,14 +1,14 @@
 // for redirecting html files
 
-document.getElementById('about').addEventListener('click',function(event){
-  event.preventDefault();
-
-  window.location.href = './about.html'
-})
 document.getElementById('service').addEventListener('click',function(event){
   event.preventDefault();
 
   window.location.href = './services.html'
+})
+document.getElementById('about').addEventListener('click',function(event){
+  event.preventDefault();
+
+  window.location.href = './about.html'
 })
 document.getElementById('home').addEventListener('click',function(event){
   event.preventDefault();
